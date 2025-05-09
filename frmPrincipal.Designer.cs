@@ -37,50 +37,55 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cmbBuscarPor = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnActualizarListado = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // trvContactos
             // 
-            this.trvContactos.Location = new System.Drawing.Point(60, 87);
+            this.trvContactos.Location = new System.Drawing.Point(60, 113);
             this.trvContactos.Name = "trvContactos";
             this.trvContactos.Size = new System.Drawing.Size(185, 230);
             this.trvContactos.TabIndex = 0;
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(60, 352);
+            this.btnAgregar.Location = new System.Drawing.Point(60, 378);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(170, 323);
+            this.btnModificar.Location = new System.Drawing.Point(170, 349);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(75, 23);
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(170, 352);
+            this.btnEliminar.Location = new System.Drawing.Point(170, 378);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 4;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(60, 323);
+            this.btnConsultar.Location = new System.Drawing.Point(60, 349);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(75, 23);
             this.btnConsultar.TabIndex = 5;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // txtBuscar
             // 
@@ -115,11 +120,22 @@
             this.label1.TabIndex = 6;
             this.label1.Text = "Buscar";
             // 
+            // btnActualizarListado
+            // 
+            this.btnActualizarListado.Location = new System.Drawing.Point(124, 84);
+            this.btnActualizarListado.Name = "btnActualizarListado";
+            this.btnActualizarListado.Size = new System.Drawing.Size(121, 23);
+            this.btnActualizarListado.TabIndex = 10;
+            this.btnActualizarListado.Text = "Actualizar Listado";
+            this.btnActualizarListado.UseVisualStyleBackColor = true;
+            this.btnActualizarListado.Click += new System.EventHandler(this.btnActualizarListado_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(309, 401);
+            this.ClientSize = new System.Drawing.Size(309, 437);
+            this.Controls.Add(this.btnActualizarListado);
             this.Controls.Add(this.cmbBuscarPor);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtBuscar);
@@ -147,6 +163,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox cmbBuscarPor;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnActualizarListado;
     }
 }
 
